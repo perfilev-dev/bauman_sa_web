@@ -1,0 +1,30 @@
+<style>
+    .column {
+        float: left;
+        width: 33.33%;
+    }
+
+    .column > div {
+        width: 100%;
+        height: 300px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+</style>
+
+<div class="row">
+    <div class="column">
+        <div id="negative"></div>
+    </div>
+    <div class="column">
+        <div id="neutral"></div>
+    </div>
+    <div class="column">
+        <div id="positive"></div>
+    </div>
+</div>
