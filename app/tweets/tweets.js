@@ -47,7 +47,7 @@ angular.module('myApp.tweets', ['ngRoute'])
 
         $http({
             method: 'GET',
-            url: 'http://localhost:5000/tweets?q=' + q + '&fromDate=' + fromDate + '&toDate=' + toDate + '&count=100'
+            url: 'http://185.5.248.114:5000/tweets?q=' + q + '&fromDate=' + fromDate + '&toDate=' + toDate + '&count=100'
         }).then(function successCallback(response) {
             window.data = response.data;
 
